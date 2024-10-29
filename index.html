@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Intranet Senai PT</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Adicione aqui o CSS para a animação */
+        .textoInicio {
+            font-family: 'Roboto', sans-serif;
+            /* Aplica a fonte Roboto ao h1 */
+        }
+
+        .c-navbar {
+            overflow: hidden;
+            background-color: #09387e;
+        }
+
+        .c-navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .c-dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .c-dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .c-navbar a:hover,
+        .c-dropdown:hover .dropbtn {
+            background-color: #568EBF;
+        }
+
+        .c-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px #ffffff;
+            z-index: 1;
+        }
+
+        .c-dropdown-content a {
+            float: none;
+            color: #000000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .c-dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .c-dropdown:hover .c-dropdown-content {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .news-section {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+
+        .news-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .news-item {
+            padding: 8px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+
+        .news-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .news-content {
+            margin-top: 4px;
+            font-size: 14px;
+        }
+
+        .news-date {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <div class="textoInicio">
+                    <h1>Intranet Senai Paulo de Tarso</h1>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
+            <img src=".\pics\logoSenai.png" alt="Logo da Empresa"
+                style="max-width: 100%; height: auto; max-height: 100px;">
+        </div>
+    </nav>
+    <!--Menu Superior-->
+    <div class="c-navbar">
+        <div class="c-dropdown">
+            <button class="dropbtn">Biblioteca
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="c-dropdown-content">
+                <a a href="https://bibliotecasesisenai.fiemg.com.br:8443/login?redirect=/" target="_blank">Pergamum</a>
+            </div>
+        </div>
+        <div class="c-dropdown">
+            <button class="dropbtn">Sistemas de Chamados
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="c-dropdown-content">
+                <a href="https://fusion.fiemg.com.br/fusion/portal/action/Login/view/normal" target="_blank">Fusion
+                    Fiemg</a>
+                <a a href="http://glpi.senaipt" target="_blank">GLPI Senai</a>
+            </div>
+        </div>
+        <div class="c-dropdown">
+            <button class="dropbtn">Secretaria
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="c-dropdown-content">
+                <a a href="https://ape.fiemg.com.br/" target="_blank">SGE (Citrix)</a>
+            </div>
+        </div>
+        <div class="c-dropdown">
+            <button class="dropbtn">Outros Links
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="c-dropdown-content">
+                <a href="arquivos/Calendário Interno - Oficial 2024.pdf" target="_blank">Calendário Oficial 2024 FIEMG</a>
+                <a href="arquivos/ramais.png" target="_blank">Lista de Ramais</a>
+                <a href="https://maisprevidencia.com.br/" target="_blank">Mais Previdência</a>
+                <a href="https://pessoas.fiemg.com.br/lugardagente/Produtos/SAAA/Principal2.aspx?amb_selecionado=0&abrir_nova_janela=N&eh_mdesigner=N&nome_portal=736B6F745746394B44706C72374B77796A52725136773D3D" target="_blank">Portal LG (Intranet Fiemg)</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Header-->
+    <header class="py-2"> <!-- Reduzindo o padding superior -->
+        <div class="container px-lg-5">
+            <div class="p-2 p-lg-3 bg-light rounded-3 text-center"> <!-- Reduzindo o padding interno -->
+                <div class="m-2 m-lg-3">
+                    <h1 class="display-4 fw-bold">Bem vindo(a)!</h1> <!-- Reduzindo o tamanho da fonte -->
+                    <p class="fs-3">Abaixo estão os principais links úteis de acesso em nossa unidade! </p>
+                    <!-- Reduzindo o tamanho da fonte -->
+                    <h3 class="pulse"><em>Click nos ícones abaixo para selecionar</em></h3>
+                    <!--<a class="btn btn-primary btn-lg" href="index.html">Click no ícone para selecionar!</a>-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content-->
+    <!-- Page Content-->
+    <section class="pt-1">
+        <div class="container px-lg-5">
+            <!-- Page Features-->
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-3 p-lg-4 pt-0 pt-lg-0">
+                            <a href="https://nossaintranet.fiemg.com.br/" target="_blank">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3">
+                                    <img src="pics/fiemg.png" alt="Intranet Fiemg"
+                                        style="max-width: 100%; max-height: 100%">
+                                </div>
+                            </a>
+                            <h2 class="fs-5 fw-bold">Intranet FIEMG</h2>
+                            <p class="fs-6 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-3 p-lg-4 pt-0 pt-lg-0">
+                            <a href="https://go.microsoft.com/fwlink/p/?linkid=873020" target="_blank">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3">
+                                    <i class="bi bi-microsoft-teams"></i>
+                                </div>
+                            </a>
+                            <h2 class="fs-5 fw-bold">Microsoft Teams</h2>
+                            <p class="fs-6 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-3 p-lg-4 pt-0 pt-lg-0">
+                            <a href="https://www.office.com/" target="_blank">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3">
+                                    <i class="bi bi-microsoft"></i>
+                                </div>
+                            </a>
+                            <h2 class="fs-5 fw-bold">Office 365</h2>
+                            <p class="fs-6 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-3 p-lg-4 pt-0 pt-lg-0">
+                            <a href="https://ape1.fiemg.com.br/" target="_blank">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3">
+                                    <img src="pics/citrix.png" alt="Citrix" style="max-width: 100%; max-height: 100%">
+                                </div>
+                            </a>
+                            <h2 class="fs-5 fw-bold">SGE (CITRIX)</h2>
+                            <p class="fs-6 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-3 p-lg-4 pt-0 pt-lg-0">
+                            <a href="http://glpi.senaipt" target="_blank">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 mt-n3">
+                                    <img src="pics/glpi.png" alt="Sistema de chamados"
+                                        style="max-width: 100%; max-height: 100%">
+                                </div>
+                            </a>
+                            <h2 class="fs-5 fw-bold">Manutenção e TI</h2>
+                            <p class="fs-6 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido por <strong>João Costa</strong> 2024</i></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
